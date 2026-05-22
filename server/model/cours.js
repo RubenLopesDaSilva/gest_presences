@@ -7,7 +7,10 @@ const courSchema = new Schema({
     salle: String,
     prof: String,
     debut: Date,
-    fin: Date
+    fin: Date,
+    eleves: { 
+        dates: [Date]
+    },
 });
 
 module.exports = mongoose.model('Cour', courSchema);
