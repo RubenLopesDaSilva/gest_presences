@@ -1,12 +1,15 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const authRoutes = require("./routes/auth");
+const coursRoutes = require("./routes/cours");
+
 
 const app = express();
 app.use(express.json())
 
 app.use('/auth', authRoutes);
 const dbUri = "mongodb+srv://Evomew:Leroy2606@cluster0.amlr0fi.mongodb.net/?appName=Cluster0";
+app.use('/cour', coursRoutes);
 app.get('/', (req, res) => {
     res.redirect('/auth');
 });
