@@ -5,6 +5,7 @@ const Schema = mongoose.Schema;
 const courSchema = new Schema({
     module: String,
     salle: String,
+    prof: String,
     debut: Date,
     fin: Date
 });
