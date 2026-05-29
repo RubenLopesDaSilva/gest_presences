@@ -1,0 +1,18 @@
+{
+    "cp-test": {
+        "_id": "cp-test",
+        "email": "test@email.com",
+        "password": "password",
+        "lname": "email",
+        "fname": "test",
+        "role": "teacher"
+    },
+    "cp-23test": {
+        "_id": "cp-23test",
+        "email": "stest@semail.com",
+        "password": "spassword",
+        "lname": "semail",
+        "fname": "stest",
+        "role": "student"
+    }
+}
