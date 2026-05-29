@@ -18,3 +18,10 @@ mongoose.connect(dbUri).then(result => {
         console.log("Server is Up");
     });
 }).catch(err => { console.error(err) })
+
+app.use((error, req, res, next) => { 
+   const status = error.status || 500 
+   const message = error.data[0]['msg'] 
+   const data = error.data 
+   res.status(status).json({ message: message, data: data }) 
+ })
