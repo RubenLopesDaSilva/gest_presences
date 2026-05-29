@@ -110,7 +110,7 @@ Consultez `GUIDE_COMPLET.md` pour :
 
 ## 🎨 Technologies
 
-- Laravel 11
+- Laravel 14
 - Tailwind CSS
 - MySQL/PostgreSQL
 - Vite
