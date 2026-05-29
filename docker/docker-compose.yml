@@ -6,8 +6,8 @@ services :
     ports : 
       - "3306:3306" 
     environment : 
-      - MYSQL_ROOT_PASSWORD=dispatcher1234
-      - MYSQL_DATABASE=presences
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=rfid_attendance
     volumes : 
       -  db_data:/var/lib/mysql
 
