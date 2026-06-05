@@ -4,7 +4,6 @@ const { validationResult } = require("express-validator")
 const jwt = require("jsonwebtoken")
 const bcrypt = require("bcryptjs");
 const user = require("../model/user");
-const { use } = require("react");
 
 exports.getAllUsers = async (req, res, next) => {
     await User
